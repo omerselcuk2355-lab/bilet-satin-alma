@@ -1,0 +1,18 @@
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE klasörleri
+.vscode/
+.idea/
+
+# Loglar ve temp dosyalar
+*.log
+*.tmp
+
+# SQLite veritabanı
+database/*.db
+
+# Node / Vendor klasörleri
+node_modules/
+vendor/

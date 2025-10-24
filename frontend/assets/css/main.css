@@ -1,0 +1,154 @@
+/* SELÇUK TUR - Galactic Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 10% 20%, #0b0f28, #1a043a 70%);
+    color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* Hero / Arama Alanı */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, #00d4ff, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p {
+    color: #b3b3d9;
+    margin-bottom: 2rem;
+}
+
+/* Sefer Arama Formu */
+.search-box {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+.search-box input, .search-box select, .search-box button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.search-box input, .search-box select {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+.search-box input::placeholder {
+    color: #ccc;
+}
+.search-box button {
+    background: linear-gradient(90deg, #00d4ff, #8e2de2);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.search-box button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(142,45,226,0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0b0f28;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* ==== GALAXY CUSTOM DROPDOWN ==== */
+.galaxy-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.galaxy-select select {
+  display: none; /* Orijinal select gizlenir */
+}
+
+.galaxy-selected {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.galaxy-selected:hover {
+  box-shadow: 0 0 15px rgba(0,212,255,0.4);
+}
+
+.galaxy-selected.active {
+  box-shadow: 0 0 20px rgba(142,45,226,0.7);
+}
+
+.galaxy-items {
+  display: none;
+  position: absolute;
+  background-color: #0b0f28;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,212,255,0.3);
+  z-index: 99;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 2px;
+}
+
+.galaxy-items div {
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.galaxy-items div:hover {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+}
